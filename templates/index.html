@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML based prediction</title>
+</head>
+<body>
+    <h1>Solar cell Element Viability Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="text">Select a formula from the dropdown:</label><br>
+        <select id="text" name="text">
+            {% for name in names %}
+                <option value="{{ name }}">{{ name }}</option>
+            {% endfor %}
+        </select><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
