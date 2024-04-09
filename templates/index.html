@@ -3,18 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ML based prediction</title>
+    <title>Solarly by Group 1</title>
 </head>
 <body>
-    <h1>Solar cell Element Viability Prediction</h1>
+    <h1>Generate Your Material</h1>
     <form action="/predict" method="post">
-        <label for="text">Select a formula from the dropdown:</label><br>
-        <select id="text" name="text">
-            {% for name in names %}
-                <option value="{{ name }}">{{ name }}</option>
+        <label for="element_a">Element 1:</label>
+        <select name="element_a" id="element_a">
+            {% for name in elements_A %}
+            <option value="{{ name }}">{{ name }}</option>
             {% endfor %}
-        </select><br>
-        <input type="submit" value="Submit">
+        </select>
+        <br><br>
+        <label for="element_b">Element 2:</label>
+        <select name="element_b" id="element_b">
+            {% for name in elements_B %}
+            <option value="{{ name }}">{{ name }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <label for="element_c">Element 3:</label>
+        <select name="element_c" id="element_c">
+            {% for name in elements_C %}
+            <option value="{{ name }}">{{ name }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <input type="submit" value="Generate">
     </form>
+  
 </body>
 </html>
