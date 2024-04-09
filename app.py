@@ -41,10 +41,14 @@ def find_elements(formulas):
 chemical_formulas= df['formula'].unique()
 elements_A, elements_B, elements_C=find_elements(chemical_formulas)
 
-# Define route for the home page
-@app.route("/")
-def home():
-    return render_template("index.html", names=name_to_row.keys(), elements_A=elements_A, elements_B=elements_B, elements_C=elements_C)
+@app.route('/')
+def home_page():
+  return render_template('index.html')
+  
+# Define route for the predictor
+@app.route("/predictor")
+def predictor():
+    return render_template("predictor.html", names=name_to_row.keys(), elements_A=elements_A, elements_B=elements_B, elements_C=elements_C)
 
 # Define route for handling form submission
 @app.route("/predict", methods=["POST"])
@@ -83,6 +87,18 @@ def predict():
   
     # Render the result template with the prediction
     return render_template("result.html", stability=stability, selected_name=selected_name)
+
+@app.route('/about')
+def about():
+  return render_template('about.html')
+
+@app.route('/solar')
+def solar():
+  return render_template('solar.html')
+
+@app.route('/ml')
+def ml():
+  return render_template('ml.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

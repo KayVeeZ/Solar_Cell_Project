@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+    <title>Predict New Materials</title>
+</head>
+<body>
+  <h1 class="text-center mt-4 mb-4"><font style="font-family: Broadway;-webkit-text-stroke: 1px purple;">Generate Your Material</font></h1>
+  <hr class='mt-0 mb-4' style="width:20%; margin: 0 40% 0 40%;border: none;height: 4px;background-color: purple;">
+    <form style="text-align: center;"  action="/predict" method="post">
+        <label for="element_a">Element 1:</label>
+        <select name="element_a" id="element_a">
+            {% for name in elements_A %}
+            <option value="{{ name }}">{{ name }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <label for="element_b">Element 2:</label>
+        <select name="element_b" id="element_b">
+            {% for name in elements_B %}
+            <option value="{{ name }}">{{ name }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <label for="element_c">Element 3:</label>
+        <select name="element_c" id="element_c">
+            {% for name in elements_C %}
+            <option value="{{ name }}">{{ name }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <input type="submit" value="Generate">
+    </form>
+  
+{% endblock %}

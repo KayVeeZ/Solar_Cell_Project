@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+
+{% block content %}
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Material Viability</title>
 </head>
 <body>
-    <h1>Result</h1>
-    <p>Formula of Element: {{ selected_name }}</p>
-    <p>Viability: {{ stability }}</p>
-    <a href="/">Go back</a>
+    <h2 class="text-center mt-4 mb-4"><font style="font-family: Broadway;-webkit-text-stroke: 1px magenta;">Result</font></h2>
+  <hr class='mt-0 mb-4' style="width:20%; margin: 0 40% 0 40%;border: none;height: 4px;background-color: magenta;">
+    <p style="text-align: center;">Formula of Element: {{ selected_name }}</p>
+    <p  style="text-align: center;">Viability: {{ stability }}</p>
+  <p  style="text-align: center;"><a href="{{url_for('predictor')}}" >Try More Combinations?</a></p>
 </body>
-</html>
+{% endblock %}

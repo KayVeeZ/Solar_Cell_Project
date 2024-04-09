@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+    <title>Why Solar Cells?</title>
+</head>
+<body>
+  <div class = "container"> 
+    <h2 class="text-center mt-4 mb-4"><font style="font-family: Broadway;-webkit-text-stroke: 1px darkblue;">What is Machine Learning?</font></h2>
+  <hr class='mt-0 mb-4' style="width:20%; margin: 0 40% 0 40%;border: none;height: 4px;background-color: darkblue;">
+    <div class='row' style='margin-bottom:16px;'>
+      <div class='col-md-6' style="text-align: justify; text-justify: inter-word;">
+      <p class='lead' >
+      <font>Machine learning (ML) is a subset of artificial intelligence (AI) enabling computers to learn and improve performance from data without explicit programming. ML encompasses three main types: supervised, unsupervised, and reinforcement learning.<br>
+
+        Supervised learning trains models on labeled datasets, mapping input features to corresponding outputs. It's used in classification (e.g., spam detection) and regression (e.g., price prediction).
+
+        Unsupervised learning uncovers patterns in unlabeled data, commonly used in clustering tasks like customer segmentation.
+
+        Reinforcement learning trains agents to interact with environments to maximize rewards, vital in autonomous systems like robotics and game playing.<br>
+
+        Each type of ML has its own strengths and weaknesses, and the choice of algorithm depends on the specific problem at hand and the nature of the available data. By leveraging these different types of machine learning, researchers and practitioners can develop sophisticated AI systems capable of addressing a wide range of real-world challenges and driving innovation across various industries.
+    </font>
+    </p>
+      </div>
+    <div class='d-none d-md-block col-md-6'>
+    <img src='/static/Machine_Learning.jpg'style='height:500px;width:600px;border-radius:10px;'>
+    </div>
+</body>
+{% endblock %}

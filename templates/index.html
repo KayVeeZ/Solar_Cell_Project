@@ -1,36 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solarly by Group 1</title>
-</head>
-<body>
-    <h1>Generate Your Material</h1>
-    <form action="/predict" method="post">
-        <label for="element_a">Element 1:</label>
-        <select name="element_a" id="element_a">
-            {% for name in elements_A %}
-            <option value="{{ name }}">{{ name }}</option>
-            {% endfor %}
-        </select>
-        <br><br>
-        <label for="element_b">Element 2:</label>
-        <select name="element_b" id="element_b">
-            {% for name in elements_B %}
-            <option value="{{ name }}">{{ name }}</option>
-            {% endfor %}
-        </select>
-        <br><br>
-        <label for="element_c">Element 3:</label>
-        <select name="element_c" id="element_c">
-            {% for name in elements_C %}
-            <option value="{{ name }}">{{ name }}</option>
-            {% endfor %}
-        </select>
-        <br><br>
-        <input type="submit" value="Generate">
-    </form>
-  
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<head><title>Solarly by Group 1</title></head>
+  <div class = "container">   
+          <h2 class='text-center mt-4 mb-4'><font style="font-family: Broadway;-webkit-text-stroke: 1px red;">Introduction</font></h2>
+          <hr class='mt-0 mb-4' style="width:20%; margin: 0 40% 0 40%;border: none;height: 4px;background-color: red;">
+          <div class='row' style='margin-bottom:16px;'>
+            <div class='col-md-6' style="text-align: justify; text-justify: inter-word;">
+            <p class='lead' >
+            <font>Machine learning (ML) is a pivotal component of modern technology, revolutionizing various sectors by enabling systems to learn from data and make predictions or decisions. ML algorithms power recommendation engines, image recognition systems, and natural language processing applications, among others. These algorithms analyze vast amounts of data to detect patterns and make informed predictions without being explicitly programmed. As the digital landscape evolves, machine learning continues to drive innovation, enabling advancements in personalized experiences, predictive analytics, and automation.<br>
+              This website aims to serve as a centralized platform for providing access to an AI-powered tool that can predict materials for solar cells with greater stability, optimized phonon spectra, and reduced band gap. Leveraging cutting-edge machine learning algorithms optimized for accuracy, this tool facilitates maximal progress in research and industry by efficiently identifying promising materials for solar energy applications.
+      </font>
+          </p>
+            </div>
+          <div class='d-none d-md-block col-md-6'>
+          <img src='/static/green-energy.jpg
+            'style='height:500px;width:600px;border-radius:10px;'>
+          </div>
+        </div>
+{% endblock %}
+
+

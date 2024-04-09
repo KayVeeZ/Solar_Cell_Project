@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {%include 'bootstrap.html' %}
+
+  </head>
+  <body>
+
+
+    
+
+      <div style ='position: relative; z-index: 2;'>
+      {%include 'nav.html'%}
+      </div>
+      <div class='col-md-2' style ='position: relative; z-index: 1;'>
+      </div>
+    <div class='col-md-10 container style ='position: relative; z-index: 1;'>
+      {% include 'banner.html' %}
+
+      {% block content %}
+
+      {% endblock %}
+    <div>
+    {%include 'footer.html'%}
+    </div>
+    </div>
+      </div>
+   
+  </body>
+</html>

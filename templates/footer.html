@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="container">
+ <footer class="py-3 my-4 col-md-12" id="bottom">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Top!</a></li>
+      <li class="nav-item"><a href="{{url_for('about')}}" class="nav-link px-2 text-body-secondary">About</a></li>
+      <li class="nav-item"><a href="mailto:kshitijvashisth@gmail.com?subject=Question%20about%20%3Cinsert%20doubt%20here%3E&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20question%3A%20%3Cinsert%20question%20here%3E" class="nav-link px-2 text-body-secondary">Contact Us!</a></li>
+    </ul>
+    <p class="text-center text-body-secondary"><a href="https://github.com/KayVeeZ">2023 KayVeeZ</a></p>
+ </footer>
+</div>
+
+<script>
+var navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach(function(link) {
+ link.addEventListener("click", function() {
+    navLinks.forEach(function(navLink) {
+      navLink.classList.remove("active");
+    });
+    this.classList.add("active");
+ });
+});
+</script>
+
+</body>
+</html>

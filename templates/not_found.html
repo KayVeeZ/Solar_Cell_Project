@@ -1,14 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+
+{% block content %}
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Combination Invalid</title>
 </head>
 <body>
-    <h1>Combination Invalid</h1>
-    <p>The combination you entered is invalid.</p>
-    <p>This might be because this material cannot exist, or maybe, theoretically hasn't been found yet or some unforeseen technical error.</p>
-    <a href="/">Go back to home page</a>
+    <h2 class="text-center mt-4 mb-4"><font style="font-family: Broadway;-webkit-text-stroke: 1px green;">Combination Invalid</font></h2>
+  <hr class='mt-0 mb-4' style="width:20%; margin: 0 40% 0 40%;border: none;height: 4px;background-color: green;">
+    <p style="text-align: center;">The combination you entered is invalid.</p>
+    <p  style="text-align: center;">This might be because this material cannot exist, or maybe, theoretically hasn't been found yet or some unforeseen technical error.</p>
+  <p  style="text-align: center;"><a href="{{url_for('predictor')}}">Try Something Else?</a></p>
 </body>
-</html>
+{% endblock %}
