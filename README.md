@@ -1,6 +1,6 @@
 # Solarly - A Perovskite Stability Predictor
 ## Introduction
-Welcome to the Perovskite Stability Predictor repository! This project focuses on deploying a machine learning model to predict the stability of perovskite materials, particularly in the context of their suitability for use in solar cell technology. The repository contains all the necessary code and resources to run the web application locally or deploy it online.
+Welcome to the Perovskite Stability Predictor repository! Perovskites can be used to create solar cells! This project focuses on deploying a machine learning model to predict the stability of perovskite materials, particularly in the context of their suitability for use in solar cell technology. The repository contains all the necessary code and resources to run the web application locally or deploy it online.
 
 ## Features
 - **Stability Prediction**: Users can input the chemical composition of a perovskite material and obtain a prediction regarding its stability.
