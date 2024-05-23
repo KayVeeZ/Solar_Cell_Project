@@ -16,7 +16,14 @@ Welcome to the Perovskite Stability Predictor repository! Perovskites can be use
 
 ## Getting Started
 To run the Perovskite Stability Predictor locally, follow these steps:
-1. Clone this repository to your local machine.
+1. Clone this repository to your local machine and navigate to the cloned directory.
+
+```bash
+  git clone https://github.com/KayVeeZ/Solar_Cell_Project
+```
+
+<kbd>Note: If you want to clone it in a custom directory add a '.' after a space character at the end of this command</kbd>
+
 2. Install the required dependencies
 
   ```bash
