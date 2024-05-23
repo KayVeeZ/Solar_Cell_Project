@@ -29,6 +29,8 @@ To run the Perovskite Stability Predictor locally, follow these steps:
    python app.py
   ```
 
+<kbd>Note: For Linux based operating systems, it might benefit to use 'python3' instead of 'python'.</kbd>
+
 4. Access the web application by navigating to 'http://localhost:5000' in your web browser.
 
 ## Usage
