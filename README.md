@@ -43,7 +43,7 @@ To run the Perovskite Stability Predictor locally, follow these steps:
 Contributions to the Perovskite Stability Predictor project are welcome! If you have ideas for improvements or new features, feel free to open an issue or submit a pull request.
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 - This project was inspired by the growing interest in perovskite materials and their potential applications.
