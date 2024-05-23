@@ -20,13 +20,13 @@ To run the Perovskite Stability Predictor locally, follow these steps:
 2. Install the required dependencies
 
   ```bash
-   pip install -r requirements.txt.
+   pip install -r requirements.txt
   ```
 
 3. Run the Flask application
  
   ```bash
-   pip install -r requirements.txt.
+   pip install -r requirements.txt
   ```
 
 4. Access the web application by navigating to 'http://localhost:5000' in your web browser.
